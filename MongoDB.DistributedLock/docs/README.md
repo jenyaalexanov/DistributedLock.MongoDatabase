@@ -1,8 +1,8 @@
 # MongoDB.DistributedLock
 
-![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/Telegram.BotBuilder?style=for-the-badge)
-![Nuget](https://img.shields.io/nuget/dt/Telegram.BotBuilder?style=for-the-badge)
-[![GitHub license](https://img.shields.io/github/license/jenyaalexanov/Telegram.BotBuilder?style=for-the-badge)](https://github.com/jenyaalexanov/Telegram.BotBuilder/blob/master/LICENSE)
+![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/MongoDB.DistributedLock?style=for-the-badge)
+![Nuget](https://img.shields.io/nuget/dt/MongoDB.DistributedLock?style=for-the-badge)
+[![GitHub license](https://img.shields.io/github/license/jenyaalexanov/MongoDB.DistributedLock?style=for-the-badge)](https://github.com/jenyaalexanov/MongoDB.DistributedLock/blob/master/LICENSE)
 
 - MongoDB.DistributedLock is a library that allows you not to worry about multiple instances and easily block sections of code by identifier.
 - Based on dotnet standard 2.1, dotnet standard 2.0
@@ -93,4 +93,4 @@ By default it's 30 seconds.
         await _distributedLock.ReleaseLockAsync("PassHereUniqueIdentifier");
     }
 
-You can find **all these examples** and **work with them** in the [webapi project](https://github.com/jenyaalexanov/Telegram.BotBuilder/tree/master/JA.Telegram.WebApi)
+You can find **all these examples** and **work with them** in the [Sample.WebApi](https://github.com/jenyaalexanov/MongoDB.DistributedLock/tree/master/Sample.WebApi)
