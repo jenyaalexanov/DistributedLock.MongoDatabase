@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;netstandard2.1;net472</TargetFrameworks>
+        <Authors>Eugeny Alexanov</Authors>
+        <PackageIcon>NugetLogo.png</PackageIcon>
+        <Version>3.1.1</Version>
+        <Title>MongoDB.DistributedLock - lightweight library for distributed locks in mongoDB</Title>
+        <Description>This library allows you to not have to worry about multiple instances and easily block sections of code by identifier.</Description>
+        <Copyright>MIT</Copyright>
+        <PackageTags>mongoDB, DistributedLock, lock, instances, AWS, serverless, docker, containers, lambdas, multithreading, paralleling, asynchrony, async, await, data, database, atomicity </PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+      <PackageReference Include="MongoDB.Driver" Version="2.20.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="NugetLogo.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+    </ItemGroup>
+
+</Project>
