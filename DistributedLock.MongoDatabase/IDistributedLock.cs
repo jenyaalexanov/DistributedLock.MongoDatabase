@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
-using MongoDB.DistributedLock.Constants;
+using DistributedLock.MongoDatabase.Constants;
 
-namespace MongoDB.DistributedLock
+namespace DistributedLock.MongoDatabase
 {
     public interface IDistributedLock
     {

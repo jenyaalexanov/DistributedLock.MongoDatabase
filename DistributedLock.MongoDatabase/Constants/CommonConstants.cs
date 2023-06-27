@@ -1,4 +1,4 @@
-namespace MongoDB.DistributedLock.Constants
+namespace DistributedLock.MongoDatabase.Constants
 {
     internal static class CommonConstants
     {

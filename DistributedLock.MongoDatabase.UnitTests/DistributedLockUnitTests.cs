@@ -1,7 +1,7 @@
-using MongoDB.DistributedLock.Interfaces;
+using DistributedLock.MongoDatabase.Interfaces;
 using Moq;
 
-namespace MongoDB.DistributedLock.UnitTests;
+namespace DistributedLock.MongoDatabase.UnitTests;
 
 public class DistributedLockUnitTests
 {
@@ -144,7 +144,7 @@ public class DistributedLockUnitTests
         var result = await _distributedLock.ExecuteAsync<int>();
 
         // Assert
-        Assert.AreEqual(42, result);
+        Assert.That(result, Is.EqualTo(42));
         _mockMongoDbContext.Verify(m => m.ReleaseLockAsync(lockId), Times.Once);
     }
 

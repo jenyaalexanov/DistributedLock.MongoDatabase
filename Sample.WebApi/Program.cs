@@ -1,4 +1,4 @@
-using MongoDB.DistributedLock.Extensions;
+using DistributedLock.MongoDatabase.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

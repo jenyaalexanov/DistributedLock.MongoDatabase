@@ -9,9 +9,7 @@ public class TestModel
     [BsonRepresentation(BsonType.ObjectId)]
     public string Id { get; set; }
 
-    [DataMember]
-    [BsonElement("name")]
-    public string Name { get; set; }
+    [DataMember] [BsonElement("name")] public string Name { get; set; } = string.Empty;
 
     [DataMember]
     [BsonElement("someUpdateString")]

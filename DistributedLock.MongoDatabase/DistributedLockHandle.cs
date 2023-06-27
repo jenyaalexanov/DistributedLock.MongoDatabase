@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace MongoDB.DistributedLock
+namespace DistributedLock.MongoDatabase
 {
     public class DistributedLockHandle : IAsyncDisposable
     {

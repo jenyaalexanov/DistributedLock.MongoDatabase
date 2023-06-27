@@ -5,11 +5,13 @@
         <Authors>Eugeny Alexanov</Authors>
         <PackageIcon>NugetLogo.png</PackageIcon>
         <Version>3.1.1</Version>
-        <Title>MongoDB.DistributedLock - lightweight library for distributed locks in mongoDB</Title>
+        <Title>DistributedLock.MongoDatabase - lightweight library for distributed locks in mongoDB</Title>
         <Description>This library allows you not to worry about multiple instances and easily block sections of code by identifier.</Description>
         <Copyright>MIT</Copyright>
         <PackageTags>mongoDB, DistributedLock, lock, instances, AWS, serverless, docker, containers, lambdas, multithreading, paralleling, asynchrony, async, await, data, database, atomicity </PackageTags>
-        <RepositoryUrl>https://github.com/jenyaalexanov/MongoDB.DistributedLock</RepositoryUrl>
+        <RepositoryUrl>https://github.com/jenyaalexanov/DistributedLock.MongoDatabase</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RootNamespace>DistributedLock.MongoDatabase</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -19,10 +21,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="NugetLogo.png">
-        <Pack>True</Pack>
-        <PackagePath></PackagePath>
-      </None>
+        <None Include="docs\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include="NugetLogo.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
     </ItemGroup>
 
 </Project>

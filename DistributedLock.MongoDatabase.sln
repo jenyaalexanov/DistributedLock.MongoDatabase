@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB.DistributedLock", "MongoDB.DistributedLock\MongoDB.DistributedLock.csproj", "{FE5C2EDC-D659-4584-9D44-D72E0C673421}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedLock.MongoDatabase", "DistributedLock.MongoDatabase\DistributedLock.MongoDatabase.csproj", "{FE5C2EDC-D659-4584-9D44-D72E0C673421}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.WebApi", "Sample.WebApi\Sample.WebApi.csproj", "{A8875C59-7046-4A50-B7FA-853DAAD7644C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB.DistributedLock.UnitTests", "MongoDB.DistributedLock.UnitTests\MongoDB.DistributedLock.UnitTests.csproj", "{72ED8F01-AD43-4740-9E55-4B74CF811CCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedLock.MongoDatabase.UnitTests", "DistributedLock.MongoDatabase.UnitTests\DistributedLock.MongoDatabase.UnitTests.csproj", "{72ED8F01-AD43-4740-9E55-4B74CF811CCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

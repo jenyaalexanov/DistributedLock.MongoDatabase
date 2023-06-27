@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MongoDB.DistributedLock\MongoDB.DistributedLock.csproj" />
+      <ProjectReference Include="..\DistributedLock.MongoDatabase\DistributedLock.MongoDatabase.csproj" />
     </ItemGroup>
 
 </Project>

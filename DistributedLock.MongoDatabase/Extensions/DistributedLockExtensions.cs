@@ -1,8 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
-using MongoDB.DistributedLock.Contexts;
-using MongoDB.DistributedLock.Interfaces;
+using DistributedLock.MongoDatabase.Contexts;
+using DistributedLock.MongoDatabase.Interfaces;
 
-namespace MongoDB.DistributedLock.Extensions
+namespace DistributedLock.MongoDatabase.Extensions
 {
     public static class DistributedLockExtensions
     {

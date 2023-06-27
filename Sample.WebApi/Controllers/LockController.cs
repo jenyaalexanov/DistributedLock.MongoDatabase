@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using MongoDB.DistributedLock;
+using DistributedLock.MongoDatabase;
 using Sample.WebApi.TestService;
 using Sample.WebApi.TestService.TestModels;
 
@@ -97,10 +97,10 @@ public class LockController : ControllerBase
             .ExecuteAsync<string>();
     }
 
-    private async Task<string> SomeStringInfo(int wait)
+    private Task<string> SomeStringInfo(int wait)
     {
         // get some async data
-        return $"some async data. You need to wait: {wait} sec.";
+        return Task.FromResult($"some async data. You need to wait: {wait} sec.");
     }
     
     [HttpPut("with-lock-fluent-v3/{id}")]

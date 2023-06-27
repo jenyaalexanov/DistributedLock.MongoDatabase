@@ -1,11 +1,11 @@
 using System;
 using System.Threading.Tasks;
 using MongoDB.Bson;
-using MongoDB.DistributedLock.Constants;
-using MongoDB.DistributedLock.Interfaces;
+using DistributedLock.MongoDatabase.Constants;
+using DistributedLock.MongoDatabase.Interfaces;
 using MongoDB.Driver;
 
-namespace MongoDB.DistributedLock.Contexts
+namespace DistributedLock.MongoDatabase.Contexts
 {
     internal sealed class DistributedLockDbContext : IDistributedLockDbContext
     {

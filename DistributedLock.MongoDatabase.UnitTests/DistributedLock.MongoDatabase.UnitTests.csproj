@@ -6,6 +6,8 @@
         <Nullable>enable</Nullable>
 
         <IsPackable>false</IsPackable>
+
+        <RootNamespace>DistributedLock.MongoDatabase.UnitTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MongoDB.DistributedLock\MongoDB.DistributedLock.csproj" />
+      <ProjectReference Include="..\DistributedLock.MongoDatabase\DistributedLock.MongoDatabase.csproj" />
     </ItemGroup>
 
 </Project>

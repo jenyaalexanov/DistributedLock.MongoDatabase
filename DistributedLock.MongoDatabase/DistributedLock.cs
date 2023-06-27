@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using MongoDB.DistributedLock.Constants;
-using MongoDB.DistributedLock.Interfaces;
+using DistributedLock.MongoDatabase.Constants;
+using DistributedLock.MongoDatabase.Interfaces;
 
-namespace MongoDB.DistributedLock
+namespace DistributedLock.MongoDatabase
 {
     public class DistributedLock : IDistributedLock
     {

@@ -1,16 +1,16 @@
-# MongoDB.DistributedLock
+# DistributedLock.MongoDatabase
 
-![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/MongoDB.DistributedLock?style=for-the-badge)
-![Nuget](https://img.shields.io/nuget/dt/MongoDB.DistributedLock?style=for-the-badge)
-[![GitHub license](https://img.shields.io/github/license/jenyaalexanov/MongoDB.DistributedLock?style=for-the-badge)](https://github.com/jenyaalexanov/MongoDB.DistributedLock/blob/master/LICENSE)
+![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/DistributedLock.MongoDatabase?style=for-the-badge)
+![Nuget](https://img.shields.io/nuget/dt/DistributedLock.MongoDatabase?style=for-the-badge)
+[![GitHub license](https://img.shields.io/github/license/jenyaalexanov/DistributedLock.MongoDatabase?style=for-the-badge)](https://github.com/jenyaalexanov/DistributedLock.MongoDatabase/blob/master/LICENSE)
 
-- MongoDB.DistributedLock is a library that allows you not to worry about multiple instances and easily block sections of code by identifier.
+- DistributedLock.MongoDatabase is a library that allows you not to worry about multiple instances and easily block sections of code by identifier.
 - Based on dotnet standard 2.1, dotnet standard 2.0
 - The library itself will create the right table for locks and mongoDB itself will delete records at the right time. You don't need to do anything else yourself.
 
 >I wrote this library for myself, but I'm sharing it with the community because it can help other developers. 
 Now I use serverless for my projects and had some problems with several instances, and lambdas that can fall asleep at any time.
-That's what led me to make the MongoDB.DistributedLock library.
+That's what led me to make the DistributedLock.MongoDatabase library.
 
 >I searched for different solutions, but didn't find anything good for mongoDB.
 >I tried serverless redis, but it wasn't quite what I needed. I needed a good solution for mongoDB and I made one.
@@ -93,4 +93,4 @@ By default it's 30 seconds.
         await _distributedLock.ReleaseLockAsync("PassHereUniqueIdentifier");
     }
 
-You can find **all these examples** and **work with them** in the [Sample.WebApi](https://github.com/jenyaalexanov/MongoDB.DistributedLock/tree/master/Sample.WebApi)
+You can find **all these examples** and **work with them** in the [Sample.WebApi](https://github.com/jenyaalexanov/DistributedLock.MongoDatabase/tree/master/Sample.WebApi)
