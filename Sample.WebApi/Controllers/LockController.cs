@@ -16,7 +16,7 @@ public class LockController : ControllerBase
 
     private readonly IDistributedLock _distributedLock;
     
-    public LockController(IDistributedLock distributedLock )
+    public LockController(IDistributedLock distributedLock)
     {
         _distributedLock = distributedLock;
     }
@@ -24,10 +24,10 @@ public class LockController : ControllerBase
     [HttpPost("with-lock")]
     public async Task PostWithLock([FromBody] Dto dto)
     {
-        var acquireLock = await _distributedLock.AcquireLockAsync("PassHereUniqueIdentifier");
+        var (acquireLock, waitSeconds) = await _distributedLock.AcquireTupleLockAsync("PassHereUniqueIdentifier");
 
         if (!acquireLock)
-            throw new Exception("Locked");
+            throw new Exception($"Locked. You need to wait: {waitSeconds} sec.");
 
         try
         {
