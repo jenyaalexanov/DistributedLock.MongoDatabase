@@ -72,7 +72,7 @@ Or with using
     await using (var handler = await _distributedLock.AcquireUsingLockAsync(id))
     {
         if(handler == null)
-        throw new Exception("Locked");
+           throw new Exception("Locked");
 
         await _testService.Put(id, dto);
     }
