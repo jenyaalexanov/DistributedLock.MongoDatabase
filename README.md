@@ -4,6 +4,8 @@
 ![Nuget](https://img.shields.io/nuget/dt/MongoDB.DistributedLock?style=for-the-badge)
 [![GitHub license](https://img.shields.io/github/license/jenyaalexanov/MongoDB.DistributedLock?style=for-the-badge)](https://github.com/jenyaalexanov/MongoDB.DistributedLock/blob/master/LICENSE)
 
+<img src="https://github.com/jenyaalexanov/MongoDB.DistributedLock/blob/master/MongoDB.DistributedLock/NugetLogo.png" alt="MongoDB DistributedLock Logo" width=128 height=128 />
+
 - MongoDB.DistributedLock is a library that allows you not to worry about multiple instances and easily block sections of code by identifier.
 - Based on dotnet standard 2.1, dotnet standard 2.0
 - The library itself will create the right table for locks and mongoDB itself will delete records at the right time. You don't need to do anything else yourself.
