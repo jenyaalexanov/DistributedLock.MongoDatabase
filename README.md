@@ -21,6 +21,21 @@ _I'm always open to your changes, commits and wishes :)_
 
 How do I get started?
 --------------
+Add DistributedLock.MongoDatabase to your project:
+
+**Package Manager**
+
+	PM> NuGet\Install-Package DistributedLock.MongoDatabase -Version 3.1.1
+  
+**.NET CLI**
+
+	>dotnet add package DistributedLock.MongoDatabase --version 3.1.1
+  
+**or something else**
+
+--------------
+
+
 You only need to add AddDistributedLock to your application
 
     builder.Services.AddDistributedLock(
