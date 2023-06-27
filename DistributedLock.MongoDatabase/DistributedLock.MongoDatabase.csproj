@@ -11,6 +11,7 @@
         <PackageTags>mongoDB, DistributedLock, lock, instances, AWS, serverless, docker, containers, lambdas, multithreading, paralleling, asynchrony, async, await, data, database, atomicity </PackageTags>
         <RepositoryUrl>https://github.com/jenyaalexanov/DistributedLock.MongoDatabase</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
         <RootNamespace>DistributedLock.MongoDatabase</RootNamespace>
     </PropertyGroup>
 
@@ -28,6 +29,10 @@
         <None Include="NugetLogo.png">
             <Pack>True</Pack>
             <PackagePath>\</PackagePath>
+        </None>
+        <None Include="docs\LICENSE.txt">
+          <Pack>True</Pack>
+          <PackagePath>\</PackagePath>
         </None>
     </ItemGroup>
 
